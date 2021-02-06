@@ -5,5 +5,12 @@
 def myGithub():
     return "link"
 
-def myOtherWebsite():
+def myRedditProfile():
     return "link"
+
+discord = "Shad0w7#0320"
+
+about = "i am a random kid"
+print(about)
+
+achievements = []
