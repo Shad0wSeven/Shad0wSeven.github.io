@@ -44,6 +44,35 @@
     --comment-color: #6272a4;
     --pink-color: #ff79c6;
     --red-color: #ff5555;
+    --purple-color: #bd93f9;
+    --yellow-color: #f1fa8c;
+    --green-color: #50fa7b;
+
+}
+
+/* Custom Spans */
+.green {
+    color: var(--green-color);
+}
+
+.red {
+    color: var(--red-color)
+}
+
+.purple {
+    color: var(--purple-color)
+}
+
+.yellow {
+    color: var(--yellow-color)
+}
+
+.pink {
+    color: var(--pink-color)
+}
+
+.comment {
+    color: var(--comment-color)
 }
 
 
@@ -133,4 +162,14 @@ body {
 
 }
 
+a, a:active, a:visited, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: inherit;
+    transition-duration: 0.1s;
+}
 
