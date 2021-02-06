@@ -43,6 +43,7 @@
     --fg-color: #f8f8f2;
     --comment-color: #6272a4;
     --pink-color: #ff79c6;
+    --red-color: #ff5555;
 }
 
 
@@ -125,6 +126,10 @@ body {
     font-family: GraphikLightItal;
     font-size: 1rem;
     padding-left: 9rem;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 
 }
 
