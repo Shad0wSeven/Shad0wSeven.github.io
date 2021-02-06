@@ -6,6 +6,26 @@
 }
 
 @font-face {
+    font-family: GraphikNorm;
+    src: url(fonts/Graphik-400-Regular.otf);
+}
+
+@font-face {
+    font-family: GraphikItal;
+    src: url(fonts/Graphik-400-RegularItalic.otf);
+}
+
+@font-face {
+    font-family: GraphikLightNorm;
+    src: url(fonts/Graphik-300-Light.otf);
+}
+
+@font-face {
+    font-family: GraphikLightItal;
+    src: url(fonts/Graphik-300-Light-Italic.otf);
+}
+
+@font-face {
     font-family: ApercuMed;
     src: url(fonts/apercu_medium_pro.otf);
 }
@@ -102,10 +122,10 @@ body {
 }
 
 .edit-message {
-    font-family: ApercuReg;
+    font-family: GraphikLightItal;
     font-size: 1rem;
     padding-left: 9rem;
-    
+
 }
 
 
