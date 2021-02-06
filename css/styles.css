@@ -84,12 +84,12 @@
 
 /* Custom Selection Colors */
 
-::selection {
-    background: var(--pink-color); /* WebKit/Blink Browsers */
+/* ::selection {
+    background: var(--pink-color); 
   }
   ::-moz-selection {
-    background: var(--pink-color); /* Gecko Browsers */
-  }
+    background: var(--pink-color); 
+  } */
 
 body {
     padding: 0;
