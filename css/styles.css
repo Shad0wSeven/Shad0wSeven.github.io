@@ -10,6 +10,11 @@
     src: url(fonts/apercu_medium_pro.otf);
 }
 
+@font-face {
+    font-family: ApercuReg;
+    src: url(fonts/apercu_regular_pro.otf);
+}
+
 /* Colors */
 :root {
     /* Credit - Dracula Theme */
@@ -36,18 +41,37 @@ body {
     font-family: ApercuMed;
     color: var(--fg-color);
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
-.lineDiv {
+.line-div {
     background-color: var(--bg-color);
     color: var(--cl-color);
     padding: 0;
     margin: 0;
+    position:relative;
+    z-index: 0;
 }
 
-.lineDiv:hover {
+.line-div:hover {
+    padding: 0;
+    margin: 0;
+    /* background-color: var(--cl-color); */
+
+}
+
+.line-div:hover > .commit-message {
+    color: var(--comment-color);
+    transition-duration: 0.1s;
+}
+
+.line-div:hover > .line-number {
+    color: var(--fg-color);
+    transition-duration: 0.1s;
+}
+
+.line-div:hover > .not-line {
     background-color: var(--cl-color);
     transition-duration: 0.1s;
-    color: var(--fg-color);
 }
 
 .codeblock {
@@ -55,21 +79,33 @@ body {
     font-family: ApercuMono;
 }
 
-.lineNumber {
+.line-number {
     padding-top: none;
     margin-top: none;
     font-family: ApercuMono;
-    background-color: var(--bg-color);
-    color: inherit;
+    /* background-color: var(--bg-color); */
     font-size: 2rem;
     padding-right: 2rem;
     -webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 
 }
 
-.notLine {
+.not-line {
     color: var(--fg-color);
+    margin-right: 0;
+    width: 100%;
+    position:absolute;
+    z-index: 99;
 }
+
+.edit-message {
+    font-family: ApercuReg;
+    font-size: 1rem;
+    padding-left: 9rem;
+    
+}
+
+
