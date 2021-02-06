@@ -47,10 +47,16 @@
     --purple-color: #bd93f9;
     --yellow-color: #f1fa8c;
     --green-color: #50fa7b;
+    --cyan-color: #8be9fd;
 
 }
 
 /* Custom Spans */
+
+.cyan {
+    color: var(--cyan-color);
+}
+
 .green {
     color: var(--green-color);
 }
