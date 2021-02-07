@@ -98,6 +98,23 @@ body {
     color: var(--fg-color);
     background-color: var(--bg-color);
     overflow-x: hidden;
+    padding-bottom: 15rem;
+}
+
+.edit-message {
+    font-family: GraphikLightItal;
+    font-size: 1rem;
+    padding-left: 9rem;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    color: var(--comment-color);
+    position: sticky;
+    top: 0;
+    padding-top: 2rem;
+    z-index: 10;
+
 }
 .line-div {
     background-color: var(--bg-color);
@@ -158,17 +175,7 @@ body {
     z-index: 99;
 }
 
-.edit-message {
-    font-family: GraphikLightItal;
-    font-size: 1rem;
-    padding-left: 9rem;
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-    color: var(--comment-color);
 
-}
 
 a, a:active, a:visited, a:focus {
     text-decoration: none;
@@ -181,3 +188,12 @@ a:hover {
     transition-duration: inherit;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
