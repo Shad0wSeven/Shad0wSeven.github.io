@@ -97,14 +97,18 @@ body {
     font-family: ApercuMed;
     color: var(--fg-color);
     background-color: var(--bg-color);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     padding-bottom: 15rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display: inline;
+    
 }
 
 .edit-message {
     font-family: GraphikLightItal;
     font-size: 1rem;
-    padding-left: 9rem;
+    padding-left: 10%;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
@@ -117,63 +121,61 @@ body {
 
 }
 .line-div {
+
     background-color: var(--bg-color);
     color: var(--cl-color);
-    padding: 0;
+    padding-left: 2rem;
     margin: 0;
-    position:relative;
-    z-index: 0;
-}
-
-.line-div:hover {
-    padding: 0;
-    margin: 0;
-    /* background-color: var(--cl-color); */
-    transition-duration: 0.1s;
-
-}
-
-.line-div:hover > .commit-message {
-    color: var(--comment-color);
-    transition-duration: inherit;
-}
-
-.line-div:hover > .line-number {
-    color: var(--fg-color);
-    /* transition-duration: inherit; */
-    transition: color inherit ease;
-}
-
-.line-div:hover > .not-line {
-    background-color: var(--cl-color);
-    transition-duration: inherit;
-}
-
-.codeblock {
-    padding-left: 10rem;
-    font-family: ApercuMono;
-}
-
-.line-number {
-    padding-top: none;
-    margin-top: none;
-    font-family: ApercuMono;
-    /* background-color: var(--bg-color); */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
     font-size: 2rem;
-    padding-right: 2rem;
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
+    clear:both;
+    margin-left: 10%;
+    display: block;
+    right: 0;
+    font-family: ApercuMono;
 
 }
 
 .not-line {
     color: var(--fg-color);
     margin-right: 0;
-    width: 100%;
-    position:absolute;
-    z-index: 99;
+    width: 92%;
+    position: relative;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    margin-left: 4rem;
+}
+ .line-div:hover {
+    transition-duration: 0.1s;
+
+}
+
+.line-div:hover > .line-number {
+    color: var(--fg-color);
+    transition-duration: inherit;
+    transition: color inherit ease;
+}
+
+.line-div:hover > .not-line {
+    background-color: var(--cl-color);
+    transition-duration: inherit;
+} 
+
+
+.line-number {
+    padding-top: none;
+    margin-top: none;
+    font-family: ApercuMono;
+    position: absolute;
+    /* background-color: var(--bg-color); */
+    font-size: 2rem;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
 }
 
 
@@ -199,3 +201,25 @@ a:hover {
     padding-top: 1rem;
     text-align: center;
   }
+
+.inline-comment {
+    font-size: 1.5rem; 
+    font-family:ApercuMed;
+    color: var(--comment-color);
+}
+
+.ender {
+    font-family: ApercuMed;
+    font-size: 1.5rem;
+    padding-left: 10rem;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    color: var(--cl-color);
+    position: sticky;
+    top: 0;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+    z-index: 10;
+}
