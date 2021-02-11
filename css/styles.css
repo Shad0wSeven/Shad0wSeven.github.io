@@ -140,7 +140,8 @@ body {
 
 .line-div:hover > .line-number {
     color: var(--fg-color);
-    transition-duration: inherit;
+    /* transition-duration: inherit; */
+    transition: color inherit ease;
 }
 
 .line-div:hover > .not-line {
@@ -186,6 +187,7 @@ a:hover {
     text-decoration: underline;
     color: inherit;
     transition-duration: inherit;
+
 }
 
 .footer {
