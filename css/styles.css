@@ -131,7 +131,7 @@ body {
     text-overflow: ellipsis;
     font-size: 2rem;
     clear:both;
-    margin-left: 10%;
+    padding-left: 10%;
     display: block;
     right: 0;
     font-family: ApercuMono;
