@@ -223,3 +223,42 @@ a:hover {
     padding-bottom: 10rem;
     z-index: 10;
 }
+
+@media screen and (max-width: 768px) {
+a {
+    background-color: var(--cl-color);
+
+}
+
+a:hover {
+    color: var(--cyan-color);
+
+}
+
+.inline-comment {
+    font-size: 1.5rem;
+}
+
+.line-number {
+    font-size: 1.5rem
+}
+
+.line-div {
+    padding-left: 0rem;
+}
+
+.not-line {
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+
+    
+}
+
+@media screen and (max-width: 1000px) {
+
+    .not-line {
+        width: 85%;
+    }   
+}
