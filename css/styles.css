@@ -1,18 +1,20 @@
 /* Fonts */
 
 @font-face {
-    font-family: ApercuMono;
-    src: url(fonts/apercu_mono_pro.otf);
+    font-family: CascadiaMedLight;
+    src: url(fonts/CascadiaCode-Regular.otf);
 }
+
+@font-face {
+    font-family: GangsterReg;
+    src: url(fonts/gangstergrotesk-regular.ttf);
+}
+
+
 
 @font-face {
     font-family: GraphikNorm;
     src: url(fonts/Graphik-400-Regular.otf);
-}
-
-@font-face {
-    font-family: GraphikItal;
-    src: url(fonts/Graphik-400-RegularItalic.otf);
 }
 
 @font-face {
@@ -25,15 +27,7 @@
     src: url(fonts/Graphik-300-Light-Italic.otf);
 }
 
-@font-face {
-    font-family: ApercuMed;
-    src: url(fonts/apercu_medium_pro.otf);
-}
 
-@font-face {
-    font-family: ApercuReg;
-    src: url(fonts/apercu_regular_pro.otf);
-}
 
 /* Colors */
 :root {
@@ -94,7 +88,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: ApercuMed;
+    font-family: GangsterReg;
     color: var(--fg-color);
     background-color: var(--bg-color);
     /* overflow-x: hidden; */
@@ -134,7 +128,7 @@ body {
     padding-left: 10%;
     display: block;
     right: 0;
-    font-family: ApercuMono;
+    font-family: CascadiaMedLight;
 
 }
 
@@ -185,7 +179,7 @@ body {
 .line-number {
     padding-top: none;
     margin-top: none;
-    font-family: ApercuMono;
+    font-family: CascadiaMedLight;
     position: absolute;
     /* background-color: var(--bg-color); */
     font-size: 2rem;
@@ -206,11 +200,11 @@ a, a:active, a:visited, a:focus {
     transition-duration: inherit;
     background: var(--cl-color);
     padding: 0.25rem;
-    -moz-border-radius: 0.75rem;
-    -webkit-border-radius: 0.75rem;
-    -o-border-radius: 0.75rem;
-    -ms-border-radius: 0.75rem;
-    border-radius: 0.75rem;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    border-radius: 0.5rem;
     }
 
 a:hover {
@@ -233,19 +227,19 @@ a:hover {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     padding-top: 1rem;
     text-align: center;
   }
 
 .inline-comment {
     font-size: 1.5rem; 
-    font-family:ApercuMed;
+    font-family:GangsterReg;
     color: var(--comment-color);
 }
 
 .ender {
-    font-family: ApercuMed;
+    font-family: GangsterReg;
     font-size: 1.5rem;
     padding-left: 10rem;
     -webkit-user-select: none; /* Safari */        
