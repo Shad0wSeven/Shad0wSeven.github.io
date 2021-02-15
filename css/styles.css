@@ -146,6 +146,7 @@ body {
     word-wrap: break-word;
     text-overflow: ellipsis;
     margin-left: 4rem;
+    padding: 0.1rem;
 }
  .line-div:hover {
     transition-duration: 0.1s;
@@ -161,7 +162,24 @@ body {
 .line-div:hover > .not-line {
     background-color: var(--cl-color);
     transition-duration: inherit;
+    
+    -moz-border-radius: 0.75rem;
+    -webkit-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    border-radius: 0.75rem;
 } 
+
+.line-div:hover > a {
+    background: none;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
 
 
 .line-number {
@@ -186,12 +204,27 @@ a, a:active, a:visited, a:focus {
     /* background-color: var(--cl-color); */
     text-decoration: underline;
     transition-duration: inherit;
-}
+    background: var(--cl-color);
+    padding: 0.25rem;
+    -moz-border-radius: 0.75rem;
+    -webkit-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    border-radius: 0.75rem;
+    }
 
 a:hover {
     text-decoration: none;
     color: inherit;
-    transition-duration: inherit;
+    transition-duration: 0.25s;
+    background: none;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
 
 }
 
