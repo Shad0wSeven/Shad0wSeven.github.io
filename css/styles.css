@@ -172,13 +172,13 @@ body {
 
 .line-div:hover > a {
     background: none;
-    padding-top: 0.1rem;
+    /* padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     -o-border-radius: 0;
     -ms-border-radius: 0;
-    border-radius: 0;
+    border-radius: 0; */
 }
 
 
