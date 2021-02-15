@@ -11,17 +11,6 @@
 }
 
 
-
-@font-face {
-    font-family: GraphikNorm;
-    src: url(fonts/Graphik-400-Regular.otf);
-}
-
-@font-face {
-    font-family: GraphikLightNorm;
-    src: url(fonts/Graphik-300-Light.otf);
-}
-
 @font-face {
     font-family: GraphikLightItal;
     src: url(fonts/Graphik-300-Light-Italic.otf);
