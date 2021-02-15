@@ -183,10 +183,13 @@ body {
 a, a:active, a:visited, a:focus {
     text-decoration: none;
     color: inherit;
+    /* background-color: var(--cl-color); */
+    text-decoration: underline;
+    transition-duration: inherit;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: inherit;
     transition-duration: inherit;
 
